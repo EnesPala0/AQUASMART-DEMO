@@ -1,3 +1,15 @@
+# AquaSmart – Smart Water Temperature Control System
+
+AquaSmart is a complete smart water management system combining:
+
+- 📱 Mobile application (Flutter MVP)
+- 🔌 ESP32-S2 embedded control unit
+- 💧 Flow and temperature sensor hardware
+- ⚙️ Closed-loop PI-based temperature control
+- 🌐 WiFi-based remote communication
+
+This repository includes both the mobile demo application and the embedded hardware/firmware design.
+
 # AquaSmart Flutter MVP
 
 Demo mobile application for checking water consumption and controlling temperature.
