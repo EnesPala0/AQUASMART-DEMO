@@ -38,7 +38,7 @@ The heart of the application, designed for easy control and monitoring.
   - **Live Cost Calculation**: Costs are calculated dynamically based on usage.
 
 ![Dashboard Screenshot](assets/screenshots/dashboard.png)
-*(Place a screenshot of the dashboard here)*
+
 
 ### 2. Statistics
 - **Weekly Consumption**: A clear bar chart showing water usage for the last 7 days.
@@ -46,7 +46,7 @@ The heart of the application, designed for easy control and monitoring.
 - **Insight**: Helpful text summaries (e.g., "10% lower than last week").
 
 ![Stats Screenshot](assets/screenshots/stats.png)
-*(Place a screenshot of the statistics screen here)*
+
 
 ### 3. Architecture & Tech Stack
 - **State Management**: Built with `flutter_riverpod` for robust and reactive state.
