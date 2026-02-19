@@ -19,6 +19,19 @@ Response fields:
 - estimated_cost
 - system_state (IDLE, CONTROL, OVERHEAT, SENSOR_ERROR)
 - shower (0 or 1)
+### Example Response
+
+```json
+{
+  "temperature": 37.8,
+  "setpoint": 38.5,
+  "flow_lmin": 8.9,
+  "total_liters": 42.3,
+  "estimated_cost": 1.05,
+  "system_state": "CONTROL",
+  "shower": 1
+}
+
 
 ---
 
