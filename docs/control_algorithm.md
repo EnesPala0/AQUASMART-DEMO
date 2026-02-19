@@ -36,3 +36,12 @@ This method:
 - Sensor failure detection
 - No-flow idle mode
 - Integrator anti-windup limiting
+
+### Fail-Safe Behavior
+
+- If temperature exceeds the overheat threshold, the system enters a safe mode (hot valve disabled, cooling action applied).
+- If temperature sensing fails (invalid DS18B20 reading), all valves are shut down to prevent uncontrolled heating.
+- If no flow is detected, the system remains in idle mode and keeps valves closed to avoid unnecessary actuation.
+- If WiFi communication is unavailable, the system continues operating locally via OLED + rotary encoder (communication is non-critical for core control).
+- Valve fault detection (stuck valve / coil failure) can be added in future revisions using current sensing or position feedback.
+
