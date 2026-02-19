@@ -85,3 +85,42 @@ The heart of the application, designed for easy control and monitoring.
 - `sleek_circular_slider`: Temperature Control UI
 - `google_fonts`: Typography
 - `intl`: Formatting
+
+## Embedded System Extension
+
+In addition to the Flutter mobile application, this repository includes the complete embedded hardware and firmware design of the AquaSmart smart water control system.
+
+### Hardware Design
+
+- KiCad schematic-level design
+- 12V protected power input stage
+- LM2596 buck converter (5V generation)
+- 3.3V regulation for ESP32-S2 logic
+- MOSFET-based solenoid valve drivers
+- DS18B20 digital temperature sensor (1-Wire)
+- YF-S201 Hall-effect flow sensor
+- SSD1306 I2C OLED display
+- Rotary encoder user interface
+
+### Firmware (ESP32-S2)
+
+- Arduino-based embedded implementation
+- Closed-loop PI temperature control
+- Flow-based feed-forward compensation
+- Time-proportional solenoid valve actuation
+- Real-time water consumption calculation
+- Overheat and sensor-fault protection logic
+- HTTP API for remote mobile integration
+
+### System Architecture
+
+The AquaSmart system operates using a closed-loop control architecture:
+
+1. The user sets a target temperature via the mobile application or rotary encoder interface.
+2. The DS18B20 sensor provides real-time water temperature feedback.
+3. The YF-S201 sensor measures instantaneous water flow and cumulative consumption.
+4. The ESP32-S2 executes a PI-based control algorithm with flow-dependent compensation.
+5. Solenoid valves are driven using time-proportional control to regulate the hot/cold mixing ratio.
+6. System status, temperature, and consumption data are transmitted via HTTP API to the mobile interface.
+
+This architecture enables stable temperature regulation, efficient water usage, and real-time monitoring within a full-stack IoT prototype.
