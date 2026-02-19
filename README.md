@@ -10,6 +10,14 @@ AquaSmart is a complete smart water management system combining:
 
 This repository includes both the mobile demo application and the embedded hardware/firmware design.
 
+## Quick Start
+
+- Mobile App (Flutter): See "How to Run" section below.
+- Hardware: `hardware/` (KiCad + PDF schematic)
+- Firmware: `firmware/` (ESP32-S2 Arduino code)
+- Documentation: `docs/` (system, control, API, BOM)
+
+
 # AquaSmart Flutter MVP
 
 Demo mobile application for checking water consumption and controlling temperature.
@@ -125,10 +133,4 @@ The AquaSmart system operates using a closed-loop control architecture:
 
 This architecture enables stable temperature regulation, efficient water usage, and real-time monitoring within a full-stack IoT prototype.
 
-## Repository Structure
-
-- mobile app → Flutter project (root level folders)
-- hardware → KiCad schematic & design
-- firmware → ESP32-S2 embedded code
-- docs → Technical documentation
 
