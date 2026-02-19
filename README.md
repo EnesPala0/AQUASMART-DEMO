@@ -124,3 +124,11 @@ The AquaSmart system operates using a closed-loop control architecture:
 6. System status, temperature, and consumption data are transmitted via HTTP API to the mobile interface.
 
 This architecture enables stable temperature regulation, efficient water usage, and real-time monitoring within a full-stack IoT prototype.
+
+## Repository Structure
+
+- mobile app → Flutter project (root level folders)
+- hardware → KiCad schematic & design
+- firmware → ESP32-S2 embedded code
+- docs → Technical documentation
+
